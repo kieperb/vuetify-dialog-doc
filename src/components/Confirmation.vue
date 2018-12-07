@@ -24,8 +24,8 @@
         <v-btn @click="prompt">Show prompt</v-btn>
       </v-layout>
     </v-container>
-    <pre v-highlightjs>
- <code class="javascript">
+<pre class="language-js">
+ <code>
   let res = await this.$dialog.{{type}}({
     text: '{{text}}',
     title: '{{title}}'
@@ -33,8 +33,8 @@
   </code>
   </pre>
 
-    <pre v-highlightjs>
- <code class="javascript">
+<pre class="language-js">
+ <code>
   let res = await this.$dialog.confirm({
     text: 'Do you realy want to delete item?',
     title: 'Warning',
@@ -54,8 +54,8 @@
 </code>
 </pre>
 
-    <pre v-highlightjs>
-<code class="javascript">
+<pre class="language-js">
+<code>
  let res = await this.$dialog.prompt({
   text: 'Please input your name',
   title: 'Title'

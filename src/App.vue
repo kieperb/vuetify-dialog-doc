@@ -61,3 +61,13 @@ export default {
   }
 };
 </script>
+<style>
+code {
+  /* fix vuetify code changes */
+  box-shadow: none;
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+}
+</style>

@@ -6,20 +6,24 @@ import Vuetify from "vuetify";
 import VuetifyDialog from "vuetify-dialog";
 import "vuetify/dist/vuetify.min.css";
 import "material-design-icons-iconfont/dist/material-design-icons.css";
-import VueHighlightJS from "vue-highlightjs";
+import "github-markdown-css";
 import VueMarkdown from "vue-markdown";
+import VuePrism from 'vue-prism'
+import 'prismjs/themes/prism.css'
 
+Vue.component('vue-markdown', VueMarkdown);
 Vue.use(Vuetify);
 Vue.use(VuetifyDialog);
-Vue.use(VueMarkdown);
+
+Vue.use(VuePrism)
 
 // Tell Vue.js to use vue-highlightjs
-Vue.use(VueHighlightJS);
+
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
   el: "#app",
-  components: { App, VueMarkdown },
+  components: { App },
   template: "<App/>"
 });
