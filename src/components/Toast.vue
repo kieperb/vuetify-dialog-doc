@@ -50,7 +50,7 @@ this.$dialog.message.{{type}}('{{text}}, {
       </v-layout>
     </v-container>
  <code class="javascript">
-this.$dialog.message.{{type}}('{{text}}, {
+this.$dialog.message.{{type}}('{{text}}', {
   position: '{{position}}'
 })
 </code>
