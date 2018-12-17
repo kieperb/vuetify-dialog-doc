@@ -17,6 +17,9 @@
       <v-tab ripple>
           Confirmation
       </v-tab>
+      <v-tab>
+        Dialog
+      </v-tab>
       <v-tab ripple>
           Notification
       </v-tab>
@@ -25,6 +28,9 @@
       </v-tab>
       <v-tab-item>
         <Confirmation/>
+      </v-tab-item>
+      <v-tab-item>
+        <Dialog/>
       </v-tab-item>
       <v-tab-item>
         <Notification/>
@@ -45,6 +51,7 @@
 
 <script>
 import Toast from "./components/Toast";
+import Dialog from "./components/Dialog";
 import Notification from "./components/Notification";
 import Confirmation from "./components/Confirmation";
 
@@ -55,6 +62,7 @@ export default {
   components: {
     Notification,
     Toast,
+    Dialog,
     Confirmation
   },
   methods: {
